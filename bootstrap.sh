@@ -39,7 +39,7 @@ chown vagrant /data
 # Run the RCloud provisioning script
   cd /data/rcloud
   # Run this as root
-  sudo sh scripts/bootstrapR.sh
+  sh scripts/bootstrapR.sh
 
   # Bring RCloud up
   scripts/fresh_start.sh
