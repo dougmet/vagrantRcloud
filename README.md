@@ -2,6 +2,8 @@
 
 This is a recipe for installing [RCloud](https://github.com/att/rcloud) onto a [Vagrant](http://www.vagrantup.com) box running Ubuntu 14.04 Trusty.
 
+The last version I tried is RCloud v1.4 on R 3.2.
+
 Clone the directory where you like. Edit the rcloud.conf file to include your own GitHub app client ID and secret. Then hit
 
 ```
