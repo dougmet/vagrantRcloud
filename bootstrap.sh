@@ -31,8 +31,10 @@ chown vagrant /data
 # Unzip, clone, or whatever, your rcloud source. From the rcloud directory:
   cd /data
   git clone https://github.com/att/rcloud.git
+  # Give this to the user
   chown vagrant rcloud
   cd rcloud
+  chown -R vagrant *
 
 # Copy the config file from your host  
  cp /vagrant/rcloud.conf /data/rcloud/conf/
