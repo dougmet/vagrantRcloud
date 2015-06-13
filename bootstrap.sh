@@ -15,7 +15,7 @@
   # Install pandoc 
   wget -q https://github.com/jgm/pandoc/releases/download/1.14.0.1/pandoc-1.14.0.1-1-amd64.deb
   apt-get -y -q install gdebi-core
-  gdebi pandoc-1.14.0.1-1-amd64.deb
+  gdebi -n pandoc-1.14.0.1-1-amd64.deb
   rm pandoc-1.14.0.1-1-amd64.deb
 
 # Setup the directory and give it to the vagrant user
@@ -26,20 +26,20 @@ chown vagrant /data
 
 
 # Installing R packages
-  echo "options(repos=structure(c(CRAN=\"http://cran.rstudio.com/\")))" >> /etc/R/Rprofile.site
+#  echo "options(repos=structure(c(CRAN=\"http://cran.rstudio.com/\")))" >> /etc/R/Rprofile.site
 
 # Unzip, clone, or whatever, your rcloud source. From the rcloud directory:
-  cd /data
-  git clone https://github.com/att/rcloud.git
-  cd rcloud
+#  cd /data
+#  git clone https://github.com/att/rcloud.git
+#  cd rcloud
 
 # Copy the config file from your host  
-  cp /vagrant/rcloud.conf /data/rcloud/conf/
+#  cp /vagrant/rcloud.conf /data/rcloud/conf/
   
 # Run the RCloud provisioning script
-  cd /data/rcloud
-  # Run this as root
-  sh scripts/bootstrapR.sh
+#  cd /data/rcloud
+#  # Run this as root
+#  sh scripts/bootstrapR.sh
 
   # Bring RCloud up
-  scripts/fresh_start.sh
+#  scripts/fresh_start.sh
