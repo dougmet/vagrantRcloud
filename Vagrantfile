@@ -53,7 +53,7 @@ Vagrant.configure(2) do |config|
     # Customize the amount of memory on the VM:
 	# FOR RCLOUD THIS NEEDS TO BE 4096 WHEN YOU BUILD THE GUITAR PACKAGE
 	# If you follow the install instructions to the letter you don't need to install guitar...
-     vb.memory = "2048"
+     vb.memory = "4096"
    end
   
   # View the documentation for the provider you are using for more
