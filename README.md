@@ -20,6 +20,7 @@ To use it back on your host browse to http://192.168.33.10:8080/login.R, authent
 
 For authentication you need to setup your own GitHub developer application https://github.com/settings/developers. You copy the client ID and secret into the correponding parts of the rcloud.conf file. My developer app looks like this:
 
+![An example of a GitHub developer application](https://raw.github.com/dougmet/vagrantRcloud/master/githubdev.png)
 
 
 ### Comments
