@@ -16,6 +16,12 @@ Once you've successfully installed RCloud for the first time you can edit the al
 
 To use it back on your host browse to http://192.168.33.10:8080/login.R, authenticate on GitHub and you're off. Probably.
 
+### GitHub App
+
+For authentication you need to setup your own GitHub developer application https://github.com/settings/developers. You copy the client ID and secret into the correponding parts of the rcloud.conf file. My developer app looks like this:
+
+
+
 ### Comments
 
 - solr is disabled.
