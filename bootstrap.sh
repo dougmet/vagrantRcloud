@@ -31,6 +31,8 @@ chown vagrant /data
 # Unzip, clone, or whatever, your rcloud source. From the rcloud directory:
   cd /data
   git clone https://github.com/att/rcloud.git
+  # Version 1.2.1
+  git checkout ba87ec0
   # Give this to the user
   chown vagrant rcloud
   cd rcloud
